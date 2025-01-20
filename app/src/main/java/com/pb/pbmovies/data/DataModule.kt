@@ -7,7 +7,7 @@ import com.pb.pbmovies.data.remote.service.OMDbApi
 import com.pb.pbmovies.data.repository.MovieRepository
 import com.pb.pbmovies.domain.repository.IMovieRepository
 import com.pb.pbmovies.domain.usecase.GetMovieUseCase
-import com.pb.pbmovies.ui.viewmodel.MainViewModel
+import com.pb.pbmovies.ui.main.MainViewModel
 import org.koin.dsl.module
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -30,8 +30,4 @@ val dataModule = module {
         )
     }
     factory<IMovieRepository> { MovieRepository(get()) }
-
-    factory { GetMovieUseCase(get()) }
-
-    factory { MainViewModel(get())  }
 }

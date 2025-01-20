@@ -1,7 +1,7 @@
-package com.pb.pbmovies.data.remote.mapper
+package com.pb.pbmovies.ui.composable.mapper
 
 import com.pb.pbmovies.R
-import com.pb.pbmovies.domain.model.ItemMovie
+import com.pb.pbmovies.ui.composable.model.ItemMovie
 import com.pb.pbmovies.domain.model.Movie
 import com.pb.pbmovies.util.Mapper
 

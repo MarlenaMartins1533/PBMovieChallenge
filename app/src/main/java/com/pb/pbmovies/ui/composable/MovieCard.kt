@@ -1,4 +1,4 @@
-package com.pb.pbmovies.ui
+package com.pb.pbmovies.ui.composable
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -26,12 +26,11 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.pb.pbmovies.R
-import com.pb.pbmovies.VideoListScreen
-import com.pb.pbmovies.domain.model.ItemMovie
-import com.pb.pbmovies.sampleVideos
+import com.pb.pbmovies.ui.composable.model.ItemMovie
+import com.pb.pbmovies.ui.composable.parameterprovider.movieListParameterProvider
 
 @Composable
-fun VideoItemRow(videoItem: ItemMovie) {
+fun MovieCard(videoItem: ItemMovie) {
     rememberScrollState()
     Card(
         shape = RoundedCornerShape(8.dp),
@@ -128,6 +127,6 @@ fun VideoItemRow(videoItem: ItemMovie) {
 
 @Composable
 @Preview(showBackground = true)
-fun VideoListScreenPreview() {
-    VideoListScreen(videoItems = sampleVideos)
+private fun MovieCardPreview() {
+    MovieCard(movieListParameterProvider.first())
 }
