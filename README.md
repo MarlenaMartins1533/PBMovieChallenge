@@ -3,7 +3,7 @@ PBMovieChallenge
 https://github.com/user-attachments/assets/92b5fefd-ef9d-4c1c-ad94-8c3d23340841
 
 
-- Desenvolvido utilizando o Android Studio na linguagem kotlin.
+- Desenvolvido utilizando a linguagem kotlin no Android Studio.
 - Arquitetura de software
     - Utilizo a arquitetura Clean Arch para montar a estrutura da aplicação,
         - data para gestão dos recursos externos a api.
@@ -12,7 +12,7 @@ https://github.com/user-attachments/assets/92b5fefd-ef9d-4c1c-ad94-8c3d23340841
     - Utilizo a arquitetura MVVM para a camada de apresentação.
 
 - Design Patterns Creational -> Padrões para criação de instancias escondendo a lógica Builder, Factory. Repository: Padrão usado para abstrair o acesso a dados, fornecendo uma interface consistente para o ViewModel interagir com diferentes fontes de dados (banco de dados, API, etc.). Dependency Injection: Princípios de injeção de dependência podem ser observados na forma como as dependências são fornecidas aos componentes do aplicativo, promovendo a modularidade e a testabilidade.
-- O Framework Jetpack Compose foi utilizado para montagem da UI programaticamente. UI Declarativa: Construindo interfaces de usuário com Jetpack Compose, definindo a interface do usuário como uma função do estado do aplicativo.
+- O Framework Jetpack Compose foi utilizado na montagem da UI programaticamente. UI Declarativa: Construindo interfaces de usuário com Jetpack Compose, definindo a interface do usuário como uma função do estado do aplicativo.
 - Testes Unitários: JUnit, Mockk
 - DI: Koin - Gestor de arquivos sendo utilizado como gestor de dependencias. pontos n positivos: Service locator, erros em tempo de execução, difícil de escalar por isso."
 - Multithread/Programação Assíncrona:  - Coroutines para gerar assíncronas e simultâneas
